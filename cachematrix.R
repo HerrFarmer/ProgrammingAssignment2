@@ -1,5 +1,11 @@
 ## The following two functions demonstrate how the scoping rules in R can be used to 
 ## preserve state within an R object, in this case within the function makeCacheMatrix().
+##
+## 1. makeMatrix() provides functions to set/get the matrix as well as caching the inverse
+##    of a matrix.
+## 2. cacheSolve() retrieves the inverse of a matrix from the makeMatrix() object. It computes
+##    a new inverse matrix if nothing has been cached.
+ 
 
 ## Provide functions to set and get a given matrix as well as to retrieve its inverse. 
 ## If a new matrix is set, the inverse is reset.
